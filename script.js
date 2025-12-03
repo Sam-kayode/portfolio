@@ -24,7 +24,7 @@ let state = {
 // INITIALIZATION
 // ============================
 
-document.addEventListener('DOMContentLoaded', function() {
+function initAfterDom() {
     // Disable scrollbar during loading
     document.body.style.overflow = 'hidden';
     
@@ -37,7 +37,14 @@ document.addEventListener('DOMContentLoaded', function() {
         hideLoading();
         initializePortfolio();
     }, CONFIG.LOADING_DELAY);
-});
+}
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initAfterDom);
+} else {
+    // If script is loaded after DOMContentLoaded (dynamic loader), run immediately
+    initAfterDom();
+}
 
 function initializePortfolio() {
     initNavigation();
