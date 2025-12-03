@@ -575,6 +575,20 @@
         </div>
     </footer>
 
+    <script>
+        (async function(){
+            try {
+                const res = await fetch('/.netlify/functions/env');
+                if (!res.ok) throw new Error('env function failed: ' + res.status);
+                const data = await res.json();
+                window.VITE_EMAILJS_SERVICE_ID = data.VITE_EMAILJS_SERVICE_ID;
+                window.VITE_EMAILJS_TEMPLATE_ID = data.VITE_EMAILJS_TEMPLATE_ID;
+                window.VITE_EMAILJS_PUBLIC_KEY = data.VITE_EMAILJS_PUBLIC_KEY;
+            } catch (err) {
+                console.warn('Failed to load runtime env:', err);
+            }
+        })();
+    </script>
     <script src="config.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script type="text/javascript">
