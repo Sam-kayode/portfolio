@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Innovative Software Engineer with 5+ years of experience building scalable web applications using Vue.js, React, Node.js, and TypeScript. Available for new opportunities.">
+    <meta name="theme-color" content="#0a0a0a">
+    <meta name="keywords" content="Software Engineer, Vue.js, React, Node.js, TypeScript, Web Development, Frontend">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://marvelloussamkayode.com">
+    <meta property="og:title" content="Marvellous Sam-Kayode - Software Engineer">
+    <meta property="og:description" content="Building scalable web applications with modern technologies. 5+ years of experience in Vue.js, React, and Node.js">
+    <meta property="og:image" content="https://marvelloussamkayode.com/og-image.png">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://marvelloussamkayode.com">
+    <meta property="twitter:title" content="Marvellous Sam-Kayode - Software Engineer">
+    <meta property="twitter:description" content="Building scalable web applications with modern technologies">
+    <meta property="twitter:image" content="https://marvelloussamkayode.com/og-image.png">
+    <link rel="canonical" href="https://marvelloussamkayode.com">
+    <title>Marvellous Sam-Kayode - Software Engineer | Vue.js, React, Node.js</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3a37d33ed4.js" crossorigin="anonymous"></script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Marvellous Sam-Kayode",
+        "url": "https://marvelloussamkayode.com",
+        "jobTitle": "Software Engineer",
+        "worksFor": {
+            "@type": "Organization",
+            "name": "PressOne Africa"
+        },
+        "sameAs": [
+            "https://www.linkedin.com/in/marvellous-sam-kayode/",
+            "https://github.com/sam-kayode"
+        ],
+        "image": "https://marvelloussamkayode.com/profile.jpg",
+        "description": "Innovative Software Engineer with 5+ years of experience building scalable web applications"
+    }
+    </script>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading" id="loading">
+        <div class="loading-content">
+            <div class="loading-text">Initializing Portfolio...</div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll Progress -->
+    <div class="scroll-indicator">
+        <div class="scroll-progress" id="scrollProgress"></div>
+    </div>
+
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="bg-grid"></div>
+        <div class="bg-orbs">
+            <div class="orb"></div>
+            <div class="orb"></div>
+            <div class="orb"></div>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursorFollower"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">MSK</div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-sun"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Hi, I'm <span class="highlight">Marvellous</span><br>
+                    Software Engineer
+                </h1>
+                <h2 class="hero-subtitle">Building scalable web applications with modern technologies</h2>
+                <p class="hero-description">
+                    Innovative Software Engineer with 5+ years of experience designing and building 
+                    scalable, high-performance web applications using JavaScript, TypeScript, Vue.js, 
+                    React.js, and Node.js. Passionate about delivering customer-focused solutions and 
+                    driving innovation in fast-paced environments.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i>
+                        View My Work
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i>
+                        Get In Touch
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="code-window">
+                    <div class="code-header">
+                        <div class="code-dot red"></div>
+                        <div class="code-dot yellow"></div>
+                        <div class="code-dot green"></div>
+                    </div>
+                    <div class="code-content">
+                        <div class="code-line">
+                            <span class="line-number">1</span>
+                            <span class="keyword">const</span> <span class="variable" style="margin-left:5px;"> developer</span> = {
+                        </div>
+                        <div class="code-line">
+                            <span class="line-number">2</span>
+                            &nbsp;&nbsp;<span class="string">name</span>: <span class="string">'Marvellous Sam-Kayode'</span>,
+                        </div>
+                        <div class="code-line">
+                            <span class="line-number">3</span>
+                            &nbsp;&nbsp;<span class="string">role</span>: <span class="string">'Software Engineer'</span>,
+                        </div>
+                        <div class="code-line">
+                            <span class="line-number">4</span>
+                            &nbsp;&nbsp;<span class="string">experience</span>: <span class="string">'5+ years'</span>,
+                        </div>
+                        <div class="code-line">
+                            <span class="line-number">5</span>
+                            &nbsp;&nbsp;<span class="string">skills</span>: [<span class="string">'Vue.js'</span>, <span class="string">'React'</span>,<span class="string">'Next'</span>,<span class="string">'Nuxt'</span>, <span class="string">'Node.js'</span>],
+                        </div>
+                        <div class="code-line">
+                            <span class="line-number">6</span>
+                            &nbsp;&nbsp;<span class="function">buildAmazingThings</span>: () => <span class="string">'Always!'</span>
+                        </div>
+                        <div class="code-line">
+                            <span class="line-number">7</span>
+                            };
+                        </div>
+                        <div class="code-line">
+                            <span class="line-number">8</span>
+                            <span class="comment">// Ready to create something extraordinary</span>
+                        </div>
+                        <div class="hero-badge">
+                            <i class="fas fa-code"></i>
+                            Available for new opportunities
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="stats-container">
+            <div class="stat-item fade-in">
+                <span class="stat-number">5+</span>
+                <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat-item fade-in">
+                <span class="stat-number">500K+</span>
+                <span class="stat-label">Users Impacted</span>
+            </div>
+            <div class="stat-item fade-in">
+                <span class="stat-number">1M+</span>
+                <span class="stat-label">App Users</span>
+            </div>
+            <div class="stat-item fade-in">
+                <span class="stat-number">99.9%</span>
+                <span class="stat-label">Uptime</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-container">
+            <div class="section-header fade-in">
+                <span class="section-badge">About Me</span>
+                <h2 class="section-title">Crafting Digital Excellence</h2>
+                <p class="section-subtitle">
+                    Passionate about creating innovative solutions that make a difference
+                </p>
+            </div>
+            <div class="about-content">
+                <div class="about-text slide-in-left">
+                    <p>
+                        I'm a passionate Software Engineer with over 5 years of experience in building 
+                        scalable web applications and distributed services. My expertise spans across 
+                        modern JavaScript frameworks, with particular strength in Vue.js, React.js, and Node.js.
+                    </p>
+                    <p>
+                        Throughout my career, I've had the privilege of working with industry leaders like 
+                        Sterling Bank, PressOne Africa (Techstars '23), and innovative startups, where I've 
+                        consistently delivered customer-focused solutions that drive business growth.
+                    </p>
+                    <p>
+                        I believe in the power of clean, maintainable code and user-centered design. 
+                        My approach combines technical excellence with creative problem-solving to build 
+                        applications that not only perform exceptionally but also provide outstanding user experiences.
+                    </p>
+                </div>
+                <div class="skills-container slide-in-right">
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fab fa-js-square"></i></div>
+                        <div class="skill-name">JavaScript</div>
+                        <div class="skill-level">Expert</div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fab fa-vuejs"></i></div>
+                        <div class="skill-name">Vue.js</div>
+                        <div class="skill-level">Expert</div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fab fa-react"></i></div>
+                        <div class="skill-name">React</div>
+                        <div class="skill-level">Advanced</div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+                        <div class="skill-name">Node.js</div>
+                        <div class="skill-level">Advanced</div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fab fa-sass"></i></div>
+                        <div class="skill-name">SASS/SCSS</div>
+                        <div class="skill-level">Expert</div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fas fa-database"></i></div>
+                        <div class="skill-name">TypeScript</div>
+                        <div class="skill-level">Advanced</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+        <div class="experience-container">
+            <div class="section-header fade-in">
+                <span class="section-badge">Experience</span>
+                <h2 class="section-title">Professional Journey</h2>
+                <p class="section-subtitle">
+                    Building impactful solutions across diverse industries and technologies
+                </p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item fade-in">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">November 2023 - October 2025</div>
+                        <div class="timeline-company">PressOne Africa (Techstars '23)</div>
+                        <div class="timeline-role">Software Engineer</div>
+                        <div class="timeline-description">
+                            Engineered scalable UI solutions for enterprise call management systems, 
+                            supporting 50,000+ clients. Led development of team management modules 
+                            and data visualization interfaces, achieving 30% improvement in user productivity.
+                        </div>
+                        <div class="timeline-tech">
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">Pinia</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">SASS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item fade-in">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">February 2022 - February 2024</div>
+                        <div class="timeline-company">Sterling Bank</div>
+                        <div class="timeline-role">Software Engineer</div>
+                        <div class="timeline-description">
+                            Enhanced user experience for 700,000+ customers on OneBank platform. 
+                            Optimized frontend performance by 40%, implemented pixel-perfect UI designs 
+                            for corporate banking solutions, and improved async API efficiency by 30%.
+                        </div>
+                        <div class="timeline-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">Next.js</span>
+                            <span class="tech-tag">Redux</span>
+                            <span class="tech-tag">TypeScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item fade-in">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">December 2021 - May 2023</div>
+                        <div class="timeline-company">Smarg.io</div>
+                        <div class="timeline-role">Software Engineer</div>
+                        <div class="timeline-description">
+                            Built seamless contract escrow platform using Vue.js and TypeScript. 
+                            Reduced code repetition by 70% through component-based architecture, 
+                            established robust CI/CD processes, and maintained 80% test coverage.
+                        </div>
+                        <div class="timeline-tech">
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">Nuxt.js</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Cloudinary</span>
+                            <span class="tech-tag">GitHub Actions</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item fade-in">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">November 2019 - October 2021</div>
+                        <div class="timeline-company">Skay Studios</div>
+                        <div class="timeline-role">Software Engineer</div>
+                        <div class="timeline-description">
+                            Developed professional photography portfolios resulting in 30% increase in bookings. 
+                            Integrated Cloudinary SDK achieving 60% reduction in image sizes and 80% faster load times. 
+                            Enhanced user experience leading to improved client satisfaction.
+                        </div>
+                        <div class="timeline-tech">
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">Vuex</span>
+                            <span class="tech-tag">SASS</span>
+                            <span class="tech-tag">Cloudinary</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="projects-container">
+            <div class="section-header fade-in">
+                <span class="section-badge">Projects</span>
+                <h2 class="section-title">Featured Work</h2>
+                <p class="section-subtitle">
+                    Showcasing innovative solutions that drive business impact
+                </p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card fade-in">
+                    <div class="project-image">
+                        <i class="fas fa-phone-alt"></i>
+                        <div class="project-overlay">
+                            <a href="https://pressone.africa/" class="project-link" aria-label="Learn more about PressOne" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://pressone.africa/" class="project-link" aria-label="View PressOne Call Queue System on GitHub" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">PressOne VOIP Phone System</h3>
+                        <p class="project-description">
+                            Scalable distributed service enabling enterprise clients to manage high-volume call campaigns with real-time performance monitoring and analytics.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">Pinia</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">SASS</span>
+                        </div>
+                        <div class="project-metrics">
+                            <div class="metric">
+                                <span class="metric-value">500K+</span>
+                                <span class="metric-label">Enterprise Clients</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">30%</span>
+                                <span class="metric-label">Productivity Boost</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in">
+                    <div class="project-image">
+                        <i class="fas fa-university"></i>
+                        <div class="project-overlay">
+                            <a href="https://sterling.ng/onebank/" class="project-link" aria-label="Learn more about OneBank Platform" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://sterling.ng/onebank/" class="project-link" aria-label="View OneBank Platform on GitHub" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">OneBank Platform</h3>
+                        <p class="project-description">
+                            Modern, responsive commercial banking application serving hundreds of thousands of customers with enhanced user experience and optimized performance.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Redux</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">SCSS</span>
+                        </div>
+                        <div class="project-metrics">
+                            <div class="metric">
+                                <span class="metric-value">1M+</span>
+                                <span class="metric-label">Active Users</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">40%</span>
+                                <span class="metric-label">Faster Loading</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in">
+                    <div class="project-image">
+                        <i class="fas fa-briefcase"></i>
+                        <div class="project-overlay">
+                            <a href="https://newsterlingpro.sterling.ng/" class="project-link" aria-label="Learn more about Sterling Pro" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://newsterlingpro.sterling.ng/" class="project-link" aria-label="View Sterling Pro on GitHub" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Sterling Pro</h3>
+                        <p class="project-description">
+                            Advanced corporate banking platform for Sterling Bank, offering robust business tools, secure transactions, and seamless integrations for enterprise clients.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">React.js</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">SCSS</span>
+                            <span class="tech-tag">Node.js</span>
+                        </div>
+                        <div class="project-metrics">
+                            <div class="metric">
+                                <span class="metric-value">100K+</span>
+                                <span class="metric-label">Business Users</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">99.9%</span>
+                                <span class="metric-label">Uptime</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            <div class="section-header fade-in">
+                <span class="section-badge">Contact</span>
+                <h2 class="section-title">Let's Build Something Amazing</h2>
+                <p class="section-subtitle">
+                    Ready to collaborate on your next project? Let's discuss how we can create impact together.
+                </p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item slide-in-left">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>marvelloussamkayode@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item slide-in-left">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>LinkedIn</h3>
+                            <p>linkedin.com/in/marvellous-sam-kayode</p>
+                        </div>
+                    </div>
+                    <div class="contact-item slide-in-left">
+                        <div class="contact-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Education</h3>
+                            <p>B.Sc Civil Engineering - University of Ibadan</p>
+                        </div>
+                    </div>
+                    <div class="contact-item slide-in-left">
+                        <div class="contact-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Specialization</h3>
+                            <p>Frontend Development & System Architecture</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form slide-in-right" id="contactForm">
+                    <div class="form-content">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" id="name" name="name" class="form-input" required aria-required="true" aria-describedby="name-help">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" id="email" name="email" class="form-input" required aria-required="true" aria-describedby="email-help">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Project Type</label>
+                            <input type="text" id="subject" name="subject" class="form-input" 
+                                   placeholder="Web App, Mobile App, Consultation, etc." required aria-required="true">
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">Project Details</label>
+                            <textarea id="message" name="message" class="form-textarea" 
+                                      placeholder="Tell me about your project, timeline, and goals..." required aria-required="true"></textarea>
+                        </div>
+                        <button type="submit" class="form-submit" aria-label="Submit contact form">
+                            <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                            Send Message
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-text">
+                &copy; 2025 Marvellous Sam-Kayode. Crafted with precision and passion.
+            </div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/marvellous-sam-kayode/" class="social-link" aria-label="LinkedIn Profile" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                </a>
+                <a href="https://github.com/sam-kayode" class="social-link" aria-label="GitHub Profile" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github" aria-hidden="true"></i>
+                </a>
+                <a href="https://x.com/kiiseti" class="social-link" aria-label="Twitter/X Profile" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                </a>
+                <a href="mailto:marvelloussamkayode@gmail.com" class="social-link" aria-label="Send Email">
+                    <i class="fas fa-envelope" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="config.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            // Wait for config.js to load ENV variables
+            if (typeof ENV !== 'undefined' && ENV.EMAILJS_PUBLIC_KEY && ENV.EMAILJS_PUBLIC_KEY !== 'YOUR_EMAILJS_PUBLIC_KEY') {
+                emailjs.init({
+                    publicKey: ENV.EMAILJS_PUBLIC_KEY
+                });
+                console.log('EmailJS initialized successfully ✓');
+            } else {
+                console.warn('EmailJS: Public key not configured', ENV);
+            }
+        })();
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
