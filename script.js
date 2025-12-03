@@ -80,7 +80,21 @@ function hideLoading() {
 
 function initNavigation() {
     const navbar = document.getElementById('navbar');
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+    const mobileNavClose = document.getElementById('mobileNavClose');
     
+    // Function to close mobile nav
+    function closeMobileNav() {
+        if (hamburger && navLinks) {
+            hamburger.classList.remove('active');
+            navLinks.classList.remove('active');
+            hamburger.setAttribute('aria-expanded', 'false');
+            document.body.style.overflow = 'auto';
+        }
+    }
+    
+    // Scroll handler for navbar styling
     window.addEventListener('scroll', () => {
         if (window.scrollY > 100) {
             navbar.classList.add('scrolled');
@@ -91,6 +105,43 @@ function initNavigation() {
     }, { passive: true });
 
     updateActiveNavLink();
+    
+    // Hamburger menu toggle
+    if (hamburger && navLinks) {
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+            hamburger.setAttribute('aria-expanded', 
+                hamburger.classList.contains('active') ? 'true' : 'false'
+            );
+            // Prevent body scroll when menu is open
+            document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : 'auto';
+        });
+        
+        // Close button click handler
+        if (mobileNavClose) {
+            mobileNavClose.addEventListener('click', closeMobileNav);
+        }
+        
+        // Close menu when clicking a nav link
+        navLinks.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', closeMobileNav);
+        });
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!navbar.contains(e.target) && navLinks.classList.contains('active')) {
+                closeMobileNav();
+            }
+        });
+        
+        // Close menu on escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && navLinks.classList.contains('active')) {
+                closeMobileNav();
+            }
+        });
+    }
 }
 
 function updateActiveNavLink() {
